@@ -1,4 +1,5 @@
 export function formatTime(totalTime) {
+    //if (isNaN(totalTime)) return 'Never - try higher repayments'
     if (isNaN(totalTime)) return 'Never - try higher repayments'
     let yrs = Math.floor(totalTime)
     return `${Math.floor(yrs)} years, ${Math.ceil((totalTime-yrs)*12.0)} months`
